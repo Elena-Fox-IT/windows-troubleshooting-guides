@@ -4,7 +4,6 @@
 ## Symptoms
 The user cannot access websites.
 
-<img width="1365" height="662" alt="1" src="https://github.com/user-attachments/assets/97253b68-b634-46ed-8fbe-9977556b485e" />
 
 ## Environment
 Windows 11, laptop.
@@ -12,13 +11,15 @@ Windows 11, laptop.
 ## Diagnosis
 1. **Confirmed the problem by reproducing it.**
   Tried to open a website in the browser.
+<img width="1365" height="662" alt="1" src="https://github.com/user-attachments/assets/97253b68-b634-46ed-8fbe-9977556b485e" />
+
   - Result: The page didn't load. 
   - Conclusion: the problem reported by the user is real and reproducible.
 
-
 2. **Checked the network configuration.**
   Ran 'ipconfig /all' and reviewed the Wi-Fi adapter section.
-  <img width="1026" height="448" alt="2" src="https://github.com/user-attachments/assets/d4853a6f-25f9-4909-bf01-ba42c9443d09" />
+ <img width="1026" height="448" alt="2" src="https://github.com/user-attachments/assets/57fb4fbc-0ad4-4a98-9da5-88431c4ab876" />
+
   - IPv4 address: valid (assigned by the router).
   - Default gateway: present.
   - DNS servers: 192.0.2.1, which looks unusual for this network.
@@ -27,6 +28,7 @@ Windows 11, laptop.
 3. **Tested connectivity by IP address.**
   Ran 'ping 8.8.8.8'.
 <img width="777" height="295" alt="3" src="https://github.com/user-attachments/assets/feeec2b8-d3cf-4682-b261-b8ad9aa8057d" />
+
 - Result: replies received.
 - Conclusion: the device can reach the internet, so the problem is not the connection itself.
 
